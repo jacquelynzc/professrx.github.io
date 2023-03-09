@@ -3,44 +3,32 @@
 }
 
 .grid-container {
-  display : flex;
-  max-width : 100%;
-  min-height : 50vh;
-  max-height : 60vh;
-  margin: auto;
-  align-content : center;
-  justify-content : center;
-  }
+    display: flex;
+    padding-top: 80px;
+    max-width: 100%;
+    min-height: 50vh;
+    max-height: 60vh;
+    align-content: center;
+    justify-content: center;
 
+  }
   .st-grid-item, .nd-grid-item, .rd-grid-item {
 
 
   }
 
-  #name {
-    padding-top: 10%;
-  }
-
   #grid-item-below {
-    display: flex;
-    position: relative;
     margin-top: 0;
-    margin-bottom: 10%;
+    margin-bottom: 50%;
     font-size: small;
     color: gray;
 
   }
 
-  h1 {
-      display : flex;
-      font-family: 'Lobster Two', cursive;
-      font-size: 4em;
-      padding-left: 6vw;
-      }
-    
   nav {
     display: flex;
-    background: linear-gradient(63deg, rgba(234,173,255,0.5) 0%, rgba(163,253,255,0.5) 53%, rgba(194,255,178,0.5) 100%);    align-content: center;
+    background-color: rgba(255, 135, 197, .48);
+    align-content: center;
     margin-bottom: 10px;
     border: 2px solid black;
   }
@@ -57,7 +45,7 @@
   }
 
 #contact {
-  padding: 10vh;
+  padding: 10vw;
 
 
 }
@@ -85,10 +73,11 @@
 a:hover {
     font-weight: lighter;
     font-size: medium;
+    color: violet;
     text-decoration: overline;
 }
 
-  #nav-home, #nav-about, #nav-contact, #art {
+  #nav-home, #nav-about, #nav-contact {
     /* display: flex; */
     flex-direction: row;
     padding-top: 15px;
@@ -105,10 +94,13 @@ a:hover {
 img {
     display: flex;
     flex-flow: row nowrap;
-    max-width: 100%;
-    padding: 0 5px 0 0;
+    max-width: auto;
+
+    height: 50vh;
+    width: auto;
     align-content: center;
     margin: auto;
+    padding: 0 5px 0 5px;
     border-radius: 10px;
 }
 
@@ -123,9 +115,14 @@ img {
     margin: 50px;
     max-width: 95vw;
     text-align: justify;
+}
+
+.aboutp {
     padding: 10vh;
     background-color: rgb(229, 204, 255, 0.8);
 }
+
+
 
 .contact-info {
     display: inline-flex;
@@ -135,27 +132,90 @@ img {
     align-items: center;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 #about {
-    padding: 10% 0 10% 0;;
+    padding: 25% 0 25% 0;;
     background-color: rgb(229, 204, 255, 0.4);
     flex-direction: column;
 }
 
-@media screen and (max-width: 600px) {
+/* .link-two {
+  color: #000000;
+  transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
+}
+
+.link-two:hover {
+  color: #111;
+  transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.link-two::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  clip-path:polygon(
+    0% -20%,
+    100% -30%,
+    100% -10%,
+    0% 0%,
+    0% 130%,
+    100% 120%,
+    100% 100%,
+    0% 110%
+  );
+  background-color: rgba(201, 130, 255, .48);
+
+  transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.link-two:hover::before {
+  clip-path: polygon(
+    0% 10%,
+    100% 0%,
+    100% 20%,
+    0% 30%,
+    0% 100%,
+    100% 90%,
+    100% 70%,
+    0% 80%
+  );
+}
+
+.link-two::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 5ch;
+  height: 5ch;
+  top: 5%;
+  right: 50%;
+  transform: translate(20%, -20%) rotate(0deg) scale(0);
+  transition: transform 1s ease;
+
+  background-color: #f27b9b;
+}
+
+.link-two:hover::after {
+  transform: translate(50%, -50%) rotate(135deg) scale(1);
+} */
+
+
+@media screen and (max-width: 990px) {
 
   .grid-container {
-    max-width: 100%;
-    width: 80%;
+    min-width: 100%;
+    width: 100%;
+    max-height: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
-  }
-
-  .grid-item {
-    resize: both;
   }
 
   .nav-menu {
@@ -164,34 +224,28 @@ img {
  }
 
  .page {
-  
+  padding-top:50%;
+  overflow: hidden;
 }
 
-h1 {
-  display : flex;
-  font-family: 'Lobster Two', cursive;
-  font-size: 4em;
-  }
 
 p {
-  font-size: 3em;
+  font-size: 16px;
 }
 
   .aboutp, #about {
     flex-flow: row nowrap;
   }
-  h1 {
-    font-size: 90%;
-  }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-height: 1100px) {
   .grid-container {
-    max-width: 100%;
+    min-height: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
+    overflow-x: hidden;
   }
 
   .nav-menu {
@@ -200,12 +254,10 @@ p {
  }
 
  .page {
+  padding-top:20%;
   overflow: hidden;
 }
 
-h1 {
-  font-size: 3em;
-}
 
 p {
   font-size: 16px;

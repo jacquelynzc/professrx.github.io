@@ -88,7 +88,7 @@ a:hover {
     text-decoration: overline;
 }
 
-  #nav-home, #nav-about, #nav-contact, #art {
+  #nav-home, #nav-about, #nav-contact {
     /* display: flex; */
     flex-direction: row;
     padding-top: 15px;
