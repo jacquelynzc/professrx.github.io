@@ -11,22 +11,12 @@
   margin: auto;
   align-content : center;
   justify-content : center;
-  z-index: 0;
   }
 
   .st-grid-item, .nd-grid-item, .rd-grid-item {
 
 
   }
-
-#pic {
-  display: flex;
-  border-radius: 50%;
-  justify-content: right;
-  max-width: 35%;
-  z-index: 1;
-  position: sticky;
-}
 
   #name {
     padding-top: 10%;
@@ -90,10 +80,6 @@
     position: fixed;
     top: 0;
     width: 100%;
-  }
-
-  .stickypic {
-    position: fixed;
   }
 
 a:hover {

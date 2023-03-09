@@ -22,10 +22,9 @@
 #pic {
   display: flex;
   border-radius: 50%;
-  justify-content: right;
   max-width: 35%;
   z-index: 1;
-  position: sticky;
+  position: relative;
 }
 
   #name {
@@ -90,10 +89,6 @@
     position: fixed;
     top: 0;
     width: 100%;
-  }
-
-  .stickypic {
-    position: fixed;
   }
 
 a:hover {

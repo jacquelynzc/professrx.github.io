@@ -78,3 +78,6 @@ a:hover {
     border-radius: 10%;
   }
 
+  .column img:hover {
+    resize: 50%;
+  }
