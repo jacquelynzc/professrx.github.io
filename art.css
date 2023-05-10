@@ -52,6 +52,12 @@ a:hover {
     display: block;
   }
 
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }  
 
   h1 {
     display : flex;
